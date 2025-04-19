@@ -1,0 +1,30 @@
+[
+  {
+    "role": "MERN Stack Intern",
+    "organisation": "EY GDS",
+    "startDate": "JAN, 2025",
+    "endDate": "MAR, 2025",
+    "experiences": ["Build a responsive website", "Worked on Frontend, Backend and Database","Project: Personal Finance Manager"],
+    "imageSrc": "history/ey.jpg"
+  },
+  {
+    "role": "MERN Stack Intern",
+    "organisation": "Sumago Infotech PVT.LTD.",
+    "startDate": "JAN, 2024",
+    "endDate": "FEB, 2024",
+    "experiences": ["Build a responsive website", "Worked on Frontend, Backend and Database","Project: Research Paper Manager"],
+    "imageSrc": "history/sumago.jpg"
+  },
+  {
+    "role": "Virtual Internship",
+    "organisation": "Edunet Foundation Green Skill",
+    "startDate": "JAN, 2025",
+    "endDate": "FEB, 2025",
+    "experiences": [
+      "Built predictive models for data analysis","Conducted data cleaning, preprocessing and visualization to enhance insights",
+      "Project: Crop Reccomendation System"
+    ],
+    "imageSrc": "history/edunet.jpg"
+  }
+]
+
