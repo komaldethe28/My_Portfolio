@@ -10,6 +10,7 @@
   width: 100vw;
   padding: 58px 10%;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .text h2 {
@@ -46,10 +47,33 @@
   letter-spacing: 1.5px;
 }
 
+/* Tablets & small laptops */
+@media screen and (max-width: 1024px) {
+  .text h2 {
+    font-size: 60px;
+  }
+
+  .text p {
+    font-size: 32px;
+  }
+
+  .link a {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 40px 6%;
+  }
+}
+
+/* General mobile */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
+    gap: 30px;
+    padding: 40px 5%;
+    align-items: center;
+    text-align: center;
   }
 
   .text {
@@ -60,5 +84,42 @@
 
   .links {
     align-items: center;
+  }
+
+  .text h2 {
+    font-size: 45px;
+  }
+
+  .text p {
+    font-size: 24px;
+  }
+
+  .link a {
+    font-size: 20px;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px 4%;
+  }
+
+  .text h2 {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .text p {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .link {
+    gap: 15px;
+  }
+
+  .link a {
+    font-size: 18px;
   }
 }
