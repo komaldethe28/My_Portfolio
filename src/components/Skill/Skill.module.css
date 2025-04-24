@@ -66,11 +66,30 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-right: 1rem;
+  /* text-align: center; */
 }
 
 .skillItem p {
   font-size: 1.25rem;
 }
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.skillTag {
+  background-color: #112240;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 
 /* Tablet Devices */
 @media screen and (max-width: 1024px) {

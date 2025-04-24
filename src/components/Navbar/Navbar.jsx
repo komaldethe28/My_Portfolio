@@ -90,6 +90,9 @@ export const Navbar = () => {
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/komaldethe28" target="_blank"        rel="noopener noreferrer"><img className={styles.responsiveIcon} 
+           src={getImageUrl("nav/githubIcon.png")} alt="Github icon"/></a>
+          </li>
         </ul>
       </div>
     </nav>
