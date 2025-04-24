@@ -1,6 +1,7 @@
 import styles from "./App.module.css";
 import { About } from "./components/About/About";
 import { Skill } from "./components/Skill/Skill";
+// import { Equcation } from 
 import { Contact } from "./components/Contact/Contact";
 import { Experience } from "./components/Experience/Experience";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <About />
       <Skill />
-      {/* <Skill /> */}
+      {/* <Education /> */}
       <Experience />
       <Projects />
       <Contact />
