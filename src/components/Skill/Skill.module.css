@@ -1,0 +1,131 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 4.5rem;
+  margin: 8rem 10%;
+  z-index: 1;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skillImage {
+  width: 35%;
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.skillItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  flex: 1;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 1.5rem;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease;
+}
+
+.skillItem:hover {
+  background-size: 100% 100%;
+}
+
+.skillItem h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.skillItem p {
+  font-size: 1.25rem;
+}
+
+/* Tablet Devices */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 3rem 5%;
+    margin: 5rem 5%;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillImage {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .skillItem {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skillItem h3 {
+    margin: 0 0 0.5rem;
+  }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 2rem 1rem;
+    margin: 3rem 1rem;
+    background-color: transparent;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .skillItems {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .skillItem {
+    padding: 1rem;
+  }
+
+  .skillItem h3,
+  .skillItem p {
+    font-size: 1rem;
+  }
+
+  .skillImage {
+    display: none;
+  }
+}

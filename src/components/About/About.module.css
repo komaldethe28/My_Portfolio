@@ -2,130 +2,142 @@
 
 .container {
   position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 4.5rem;
-  margin: 8rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 49px;
   z-index: 1;
-}
-
-.title {
-  color: var(--color-text);
-  font-size: 2.2rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .content {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.aboutImage {
-  width: 35%;
-  max-width: 400px;
-  min-width: 250px;
-}
-
-.aboutItems {
-  color: var(--color-text);
-  display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-  flex: 1;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+  max-width: 600px;
 }
 
-.aboutItem {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 20px;
-  list-style: none;
-  padding: 1.5rem;
-  background-image: linear-gradient(
+.title {
+  font-size: clamp(36px, 8vw, 72px);
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-roboto);
+  background: linear-gradient(
     90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
   );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.4s ease;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-.aboutItem:hover {
-  background-size: 100% 100%;
+.description {
+  font-size: clamp(18px, 4vw, 30px);
+  font-family: var(--font-roboto);
+  margin-bottom: 52px;
+  text-align: left;
 }
 
-.aboutItem h3 {
-  font-size: 1.5rem;
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 100px;
+  font-size: clamp(18px, 4vw, 30px);
   font-weight: 600;
-  margin-right: 1rem;
+  padding: 14px 22px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.aboutItem p {
-  font-size: 1.25rem;
+.aboutImg {
+  width: 70%;
+  max-width: 400px;
+  height: auto;
+  z-index: 1;
+  border-radius: 50%;
+  }
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
-/* Tablet Devices */
-@media screen and (max-width: 1024px) {
+.topBlur,
+.bottomBlur {
+  position: absolute;
+  border-radius: 764px;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.topBlur {
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  top: -128px;
+  left: -10vw;
+}
+
+.bottomBlur {
+  width: 70vw;
+  height: 50vw;
+  min-width: 250px;
+  top: 246px;
+  right: -25vw;
+}
+
+@media screen and (max-width: 830px) {
   .container {
-    padding: 3rem 5%;
-    margin: 5rem 5%;
-  }
-
-  .content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-  }
-
-  .aboutImage {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .aboutItem {
-    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
   }
 
-  .aboutItem h3 {
-    margin: 0 0 0.5rem;
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .aboutImg {
+    width: 80%;
   }
 }
 
-/* Mobile Devices */
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 2rem 1rem;
-    margin: 3rem 1rem;
-    background-color: transparent;
+@media screen and (max-width: 480px) {
+  .contactBtn {
+    padding: 12px 18px;
+  }
+
+  .aboutImg {
+    width: 100%;
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 8vw;
   }
 
-  .aboutItems {
-    margin-top: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .aboutItem {
-    padding: 1rem;
-  }
-
-  .aboutItem h3,
-  .aboutItem p {
-    font-size: 1rem;
-  }
-
-  .aboutImage {
-    display: none;
+  .description {
+    font-size: 5vw;
   }
 }

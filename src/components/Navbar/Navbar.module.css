@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 61px;
-  z-index: 2;
+  z-index: 1;
   margin: 0 10%;
 }
 
@@ -28,7 +28,7 @@
 
 .menuItems {
   display: flex;
-  gap: 47px;
+  gap: 30px;
   list-style: none;
 }
 

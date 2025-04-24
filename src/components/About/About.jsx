@@ -5,40 +5,21 @@ import { getImageUrl } from "../../utils";
 
 export const About = () => {
   return (
-    <section className={styles.container} id="about">
-      <h2 className={styles.title}>About</h2>
+    <section className={styles.container}>
       <div className={styles.content}>
-        <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
-              <p>
-                I'm a frontend developer with experience in building responsive and optimized sites. Technologis: HTML5, CSS3, JavaScript(ES6+), Bootstrap, React, Vite
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
-              <p>
-                I have experience developing fast and optimised back-end systems and APIs. Technologis: Node, Express,MongoDB, Flask
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Technical Skiils</h3>
-              <p>
-                Knowledge of Python, C, C++, JAVA, Data Structure and Algorithms, Object Oriented Programming, AI/ML, MySQL, MongoDB, AWS (EC2, S3,), Docker, GitHub Actions,JWT Authentication, Flask
-              </p>
-            </div>
-          </li>
-          
-        </ul>
+        <h1 className={styles.title}>I'm Komal Dethe</h1>
+        <p className={styles.description}>
+          I'm a full-stack developer with expertise in frontend and backend devlopment. Skilled in designing scalable, high-performance applications and integrating RESTful APIs. Passionate about, Python, AI/ML, problem-solving and optimizing Web Applications for the best user experience.
+        </p>
+        {/* <a href="mailto:dethekomalv@gmil.com" className={styles.contactBtn}>
+          Check Resume
+        </a> */}
+        <a href="https://drive.google.com/file/d/1PP8y7-dql4G7VNkitWub-pjT7bHUYgNj/view?usp=drivesdk" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">Check Resume</a>
       </div>
+      <img src={getImageUrl("about/MyImage.jpg")} alt="my_image" className={styles.aboutImg}
+      />
+      <div className={styles.topBlur} />
+      <div className={styles.bottomBlur} />
     </section>
   );
 };
