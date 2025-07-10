@@ -60,7 +60,7 @@ export const Skill = () => {
               <h3>Python Libraries:</h3>
               <p>
               I regularly work with a wide range of Python libraries for data analysis, machine learning, and visualization, helping me build efficient, intelligent and insightful solutions.    
-                <div className={styles.skillTags}>{["Pandas", "NumPy", "Matplotlib", "Seaborn","SciPy", "Pickle", "sklearn-learn","Streamlit","TensorFlow", "PyTorch", "Flask"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>     ))}
+                <div className={styles.skillTags}>{["Pandas", "NumPy", "Matplotlib", "Seaborn","SciPy", "Pickle", "scikit-learn","Streamlit","TensorFlow", "PyTorch", "Flask"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>     ))}
                 </div>
               </p>
             </div>

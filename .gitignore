@@ -1,37 +1,82 @@
+# # Node modules
+# /node_modules/
+# node_modules/
+
+# # Logs
+# /logs
+# *.log
+
+# # Dependency directories
+# /bower_components/
+
+# # Build output
+# /dist/
+# /build/
+
+# # Runtime data
+# /pids/
+# /run/
+
+# # IDE and OS files
+# .DS_Store
+# Thumbs.db
+
+# # dotenv environment variable file
+# .env
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
+
+# # Next.js build directory
+# /.next/
+
+# # React Native
+# /ios/Pods/
+# /android/.gradle/
+# .vercel
+
 # Node modules
 /node_modules/
-node_modules/
 
 # Logs
-/logs
-*.log
-
-# Dependency directories
-/bower_components/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 # Build output
-/dist/
 /build/
 
 # Runtime data
 /pids/
-/run/
+*.pid
+*.seed
+*.pid.lock
 
-# IDE and OS files
+# System files
 .DS_Store
 Thumbs.db
 
-# dotenv environment variable file
+# Environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Next.js build directory
-/.next/
+# Optional: Vercel & Netlify local settings (safe to ignore)
+/.vercel
+.netlify/
 
-# React Native
-/ios/Pods/
-/android/.gradle/
-.vercel
+# IDE/editor folders and files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Optional caches and coverage
+.cache/
+coverage/
+*.tgz
+*.log
