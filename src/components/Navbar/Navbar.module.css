@@ -1,88 +1,6 @@
-/* @import "../../vars.css";
-
-.navbar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 60px;
-  z-index: 1;
-  margin: 0 10%;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-
-.menuBtn {
-  display: none;
-}
-
-.menu {
-  display: flex;
-}
-
-.menuItems {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-.menuItems a {
-  font-size: 25px;
-  color: var(--color-text);
-  text-decoration: none;
-}
-
-@media screen and (max-width: 830px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
-  }
-
-  .menuBtn {
-    display: block;
-    cursor: pointer;
-  }
-
-  .menuItems {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 13px;
-    border-radius: 10px;
-    background: rgb(25, 55, 109);
-    background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
-    );
-    padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-  }
-
-  .menuOpen {
-    display: flex;
-    z-index: 1;
-  }
-} */
-
 @import "../../vars.css";
 
+/* Navbar wrapper */
 .navbar {
   position: relative;
   display: flex;
@@ -94,6 +12,7 @@
   z-index: 10;
 }
 
+/* Site Title */
 .title {
   font-size: 30px;
   font-weight: 600;
@@ -101,12 +20,14 @@
   color: var(--color-text);
 }
 
+/* Menu container */
 .menu {
   display: flex;
   align-items: center;
   position: relative;
 }
 
+/* Toggle button */
 .menuBtn {
   display: none;
   background: none;
@@ -115,22 +36,39 @@
   z-index: 20;
 }
 
+/* Navigation list */
 .menuItems {
   display: flex;
   gap: 30px;
   list-style: none;
+  align-items: center;
   transition: all 0.3s ease-in-out;
 }
 
+/* Links inside nav */
 .menuItems a {
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icons for LinkedIn / GitHub */
+.responsiveIcon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.responsiveIcon:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 830px) {
   .navbar {
-    /* flex-direction: column; */
     align-items: flex-start;
   }
 
@@ -161,12 +99,21 @@
       rgba(25, 55, 109, 0.2) 0%,
       rgba(25, 55, 109, 1) 100%
     );
-    padding: 24px 100px;
+    padding: 24px 50px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     z-index: 10;
   }
 
   .menuOpen {
     display: flex;
+  }
+
+  .menuItems a {
+    font-size: 22px;
+  }
+
+  .responsiveIcon {
+    width: 26px;
+    height: 26px;
   }
 }
