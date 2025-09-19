@@ -14,7 +14,7 @@ export const About = () => {
         {/* <a href="mailto:dethekomalv@gmil.com" className={styles.contactBtn}>
           Check Resume
         </a> */}
-        <a href="https://drive.google.com/file/d/1PP8y7-dql4G7VNkitWub-pjT7bHUYgNj/view?usp=drivesdk" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">Check Resume</a>
+        <a href="https://drive.google.com/file/d/1E1H2m6Tm5Gzkw3ocKqbX4IS02xzKGHKI/view?usp=drive_link" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">Check Resume</a>
       </div>
       <img src={getImageUrl("about/MyImage.jpg")} alt="my_image" className={styles.aboutImg}
       />

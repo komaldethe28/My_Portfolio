@@ -38,7 +38,7 @@ export const Skill = () => {
               <h3>Languages:</h3>
               <p>
                 I have a Strong foundation in programming languages with focus on problem-solving and software devlopment across multiple domain.
-                <div className={styles.skillTags}>{["Python","C", "C++", "DSA", "JAVA", "AI-ML", "OOP"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>))}
+                <div className={styles.skillTags}>{["Python", "C++", "DSA", "AI-ML", "OOP"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>))}
                 </div>
               </p>
             </div>
@@ -49,7 +49,7 @@ export const Skill = () => {
               <h3>Other Skills:</h3>
               <p>
                 I have hand-on experience with essential toos and platforms.
-                <div className={styles.skillTags}>{["MySQL", "AWS (EC2, S3)", "Docker", "GitHub Actions","JWT Authentication"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>))}
+                <div className={styles.skillTags}>{["MySQL","Docker", "GitHub Actions","JWT Authentication"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>))}
                 </div>
               </p>
             </div>
