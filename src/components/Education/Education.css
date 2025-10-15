@@ -1,0 +1,147 @@
+@import "../../vars.css";
+
+.education-section {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: var(--font-roboto);
+}
+
+.education-title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ============================
+   Education Timeline / History
+============================ */
+.education-timeline {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px auto 0 auto;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109) 100%);
+  border-radius: 10px;
+  padding: 24px;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-item img {
+  width: 50px;
+  height: auto;
+}
+
+.education-details {
+  flex: 1;
+  text-align: left;
+}
+
+.education-details h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.education-details p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+
+.education-details .duration {
+  color: #9fc5e8;
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+/* ============================
+   Responsive Adjustments
+============================ */
+
+/* Tablet & small laptop */
+@media screen and (max-width: 1024px) {
+  .education-timeline {
+    width: 90%;
+  }
+
+  .education-details h3 {
+    font-size: 26px;
+  }
+
+  .education-details p,
+  .education-details .duration {
+    font-size: 18px;
+  }
+}
+
+/* Mobile / tablet */
+@media screen and (max-width: 830px) {
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .education-item img {
+    width: 40px;
+  }
+
+  .education-details h3 {
+    font-size: 24px;
+  }
+
+  .education-details p,
+  .education-details .duration {
+    font-size: 16px;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+  .education-section {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .education-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .education-item {
+    padding: 16px;
+  }
+
+  .education-item img {
+    width: 35px;
+  }
+
+  .education-details h3 {
+    font-size: 20px;
+  }
+
+  .education-details p,
+  .education-details .duration {
+    font-size: 14px;
+  }
+}
+

@@ -1,7 +1,7 @@
 import React from "react";
 
+import GitHubLogo from "../../../assets/contact/githubIcon.png";
 import styles from "./Projects.module.css";
-
 import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
 
@@ -14,6 +14,15 @@ export const Projects = () => {
           return <ProjectCard key={id} project={project} />;
         })}
       </div>
+
+      <div className={styles.links}>
+        <a href="https://github.com/komaldethe28" className={styles.gitproject}
+          target="_blank" rel="noopener noreferrer">
+          <img src={GitHubLogo} alt="GitHub Logo" className={styles.gitIcon} />
+          View my other Project work
+        </a>
+      </div>
+
     </section>
   );
 };

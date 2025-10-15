@@ -14,7 +14,7 @@
 
 /* Site Title */
 .title {
-  font-size: 30px;
+  font-size: 17px;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
@@ -39,7 +39,7 @@
 /* Navigation list */
 .menuItems {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   list-style: none;
   align-items: center;
   transition: all 0.3s ease-in-out;

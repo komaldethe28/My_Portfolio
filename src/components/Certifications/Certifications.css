@@ -1,0 +1,127 @@
+/* Base (Desktop) */
+.certifications-section {
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  color: var(--color-text); /* Optional: dark background for contrast */
+}
+
+.certifications-section h2 {
+  color: #9b84ff;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.certifications-section p {
+  color: #cccccc;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px;
+  justify-items: center;
+}
+
+.cert-card {
+  background-color: #19376d;
+  padding: 20px 15px;
+  border-radius: 12px;
+  font-weight: 600;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  cursor: pointer; /* Indicates clickable card */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  text-decoration: none; /* For clickable <a> tags */
+  color: #ffffff; /* Ensure text stays white if using <a> */
+}
+
+
+.cert-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.cert-company {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a08df7;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  background-color: #2a3a8c;
+}
+
+.cert-card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #2a2a36;
+}
+
+/* Mobile view (up to 600px) */
+@media (max-width: 600px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 15px;
+  }
+
+  .certifications-section h2 {
+    font-size: 2rem;
+  }
+
+  .certifications-section p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .cert-card {
+    width: 90%;
+    padding: 18px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablet view (601px to 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 15px;
+  }
+
+  .certifications-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .certifications-section p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+}
+
+/* Optional: Small hover effect on mobile */
+@media (max-width: 600px) {
+  .cert-card:hover {
+    transform: none; /* Avoid too much shift on small screens */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+

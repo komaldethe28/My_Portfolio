@@ -1,28 +1,28 @@
 [
   {
     "title": "Smart Student Risk Prediction",
-    "imageSrc": "projects/SRP.png",
-    "description": "Designing a predictive model using hybrid deep learning techniques to identify students at risk of dropping out.Addresses real-time engagement issues in virtual education.",
-    "skills": ["Python", "Pandas", "NumPy","TensorFlow", "Keras", "React", "Express", "Node","Chart.js", "MongoDB", "JWT Authentication"],
+    "imageSrc": "projects/image.png",
+    "description": "Designing a predictive model to identify students at risk of dropping out.Addresses real-time engagement issues in virtual education.",
+    "skills": ["Python", "Pandas", "NumPy","Keras", "TensorFlow", "React", "Express", "Node","Chart.js", "MongoDB", "JWT Authentication"],
     "source": " "
   },
   {
     "title": "Personal Finance Manager",
-    "imageSrc": "projects/money.png",
+    "imageSrc": "projects/Finance.png",
     "description": "Developed a full-stack finance tracking app with JWT authentication and CRUD operations. Integrated category-wise expense tracking and visual analytics using Chart.js.",
     "skills": ["React", "Express", "Node", "MongoDB", "JWT Authentication"],
     "source": " "
   },
   {
     "title": "Research Paper Manager",
-    "imageSrc": "projects/PPR.png",
+    "imageSrc": "projects/Paper_output.png",
     "description": "Built a web app with login & file upload features for managing faculty research papers. Implemented MongoDB filtering and responsive UI for better usability.",
     "skills": ["React", "Express", "Node", "MongoDB"],
     "source": "https://github.com/komaldethe28/Reserch-paper.git"
   },
   {
     "title": "Crop Recommendation System",
-    "imageSrc": "projects/CROP.png",
+    "imageSrc": "projects/Cropimg.png",
     "description": "Built predictive models for data analysis and Conducted data cleaning, preprocessing and visualization to enhance insights.",
     "skills": ["Python", "HTML", "CSS", "Flask","pickle", "Numpy","sklearn","streamlit"],
     "source": "https://github.com/komaldethe28/Crop_recommendation_usingML.git"

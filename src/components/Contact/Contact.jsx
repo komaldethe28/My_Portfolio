@@ -27,6 +27,8 @@ export const Contact = () => {
           <a href="https://github.com/komaldethe28">github.com/komaldethe</a>
         </li>
       </ul>
+
+      <p>@Crafted by Komal, Developed with passion.</p>
     </footer>
   );
 };

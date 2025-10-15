@@ -24,7 +24,7 @@
 .title {
   font-size: clamp(36px, 8vw, 72px);
   font-weight: 900;
-  margin-bottom: 33px;
+  margin-bottom: 10px;
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
@@ -37,13 +37,38 @@
   -webkit-background-clip: text;
 }
 
+.role {
+  font-size: clamp(18px, 4vw, 30px);
+  font-family: var(--font-roboto);
+  white-space: nowrap;      /* keep text in one line */
+  overflow: hidden;         /* hide overflow */
+  width: 0;                 /* start with 0 width */
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
 .description {
   font-size: clamp(18px, 4vw, 30px);
   font-family: var(--font-roboto);
   margin-bottom: 52px;
   line-height: 1.5;
+  
+  opacity: 0;              /* start hidden */
+  transform: translateY(20px); /* start slightly below */
+  animation: fadeInUp 1.5s ease-out forwards; /* apply animation */
+  animation-delay: 0.5s;   /* optional delay */
 }
 
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* move to original position */
+  }
+}
+
+/* 
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
@@ -53,7 +78,54 @@
   font-weight: 600;
   padding: 14px 28px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+} */
+
+.button-group {
+  display: flex;
+  justify-content: center;   /* centers the buttons horizontally */
+  align-items: center;
+  gap: 30px;                 /* space between buttons */
+  flex-wrap: wrap;           /* keeps them responsive on smaller screens */
 }
+
+/* Common style for both buttons */
+.contactBtn,
+.linkedBtn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border-radius: 8px; /* small corner rounding — for square look use 0 */
+  font-size: clamp(16px, 3vw, 22px);
+  font-weight: 600;
+  padding: 10px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Hover effect */
+.contactBtn:hover,
+.linkedBtn:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* LinkedIn-specific style */
+/* .linkedBtn {
+  background-color: #0a66c2;
+} */
+
+.linkedBtn:hover {
+  color: #0a66c2;
+  border-color: #0a66c2;
+}
+
+
+
 
 /* 🖼️ Image Styling - slightly oval but near circular */
 .aboutImg {
@@ -75,7 +147,7 @@
     height: auto;
     aspect-ratio: 6 / 7; /* keeps the oval shape on resize */
     border-radius: 50% / 55%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 

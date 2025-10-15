@@ -2,27 +2,50 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 120px;
+  margin-top: 20px;
   background-color: var(--color-secondary);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100vw;
   padding: 58px 10%;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .text h2 {
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 4px;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+
+  /* Standard property first */
+  background-clip: text;
+
+  /* Vendor prefix for Chrome, Safari, Edge */
+  -webkit-background-clip: text;
+
+  /* Make the text transparent to show gradient */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .text p {
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 15px;
 }
 
 .links {
@@ -37,14 +60,35 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link:hover {
+  transform: translateX(10px);
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1.5px;
+  position: relative;
+}
+
+.link a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -3px;
+  background: var(--color-accent, #ff7e5f);
+  transition: width 0.5s ease;
+}
+
+.link a:hover::after {
+  width: 100%;
 }
 
 /* Tablets & small laptops */

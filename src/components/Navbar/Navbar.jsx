@@ -1,57 +1,3 @@
-// import React, { useState } from "react";
-
-// import styles from "./Navbar.module.css";
-// import { getImageUrl } from "../../utils";
-
-// export const Navbar = () => {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   return (
-//     <nav className={styles.navbar}>
-//       <a className={styles.title} href="/">Portfolio</a>
-//       <div className={styles.menu}>
-//         <img
-//           className={styles.menuBtn}
-//           src={
-//             menuOpen
-//               ? getImageUrl("nav/closeIcon.png")
-//               : getImageUrl("nav/menuIcon.png")
-//           }
-//           alt="menu-button"
-//           onClick={() => setMenuOpen(!menuOpen)}
-//         />
-//         <ul
-//           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-//           onClick={() => setMenuOpen(false)}
-//         >
-
-// {/*navbar list */}
-//           <li>
-//             <a href="#about">About</a>
-//           </li>
-//           <li>
-//             <a href="#skill">Skills</a>
-//           </li>
-//           {/* <li>
-//             <a href="#education">Education</a>
-//           </li> */}
-//           <li>
-//             <a href="#experience">Experience</a>
-//           </li>
-//           <li>
-//             <a href="#projects">Projects</a>
-//           </li>
-//           <li>
-//             <a href="#contact">Contact</a>
-//           </li>
-//         </ul>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// src/components/Navbar/Navbar.jsx
-
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
@@ -85,17 +31,23 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
           <li><a href="#about">About</a></li>
+          <li><a href="#education-section">Education</a></li>
           <li><a href="#skill">Skills</a></li>
-          {/* <li><a href="#education">Education</a></li> */}
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications-section">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
-          {/* <li><a href="https://github.com/komaldethe28" target="_blank"        rel="noopener noreferrer"><img className={styles.responsiveIcon} 
-           src={getImageUrl("nav/githubIcon.png")} alt="Github icon"/></a>
+          
+          {/* <li><a href="https://www.linkedin.com/in/komal-dethe-5827a12b6/" target="_blank" rel="noopener noreferrer"><img className={styles.responsiveIcon}
+            src={getImageUrl("nav/linkedinIcon.png")} alt="Linkedin icon" /></a>
           </li> */}
-          <li><a href="https://www.linkedin.com/in/komal-dethe-5827a12b6/" target="_blank" rel="noopener noreferrer"><img className={styles.responsiveIcon} 
-           src={getImageUrl("nav/linkedinIcon.png")} alt="Linkedin icon"/></a>
+
+          <li>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=dethekomalv@gmail.com" target="_blank" rel="noopener noreferrer"><img className={styles.responsiveIcon}
+                src={getImageUrl("contact/emailIcon.png")} alt="Email icon" /></a>
           </li>
+
         </ul>
       </div>
     </nav>
