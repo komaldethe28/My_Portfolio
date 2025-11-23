@@ -42,6 +42,6 @@
     "description": "A responsive and modern portfolio website built using React and Vite to showcase my skills, projects, education, and achievements. Designed with a clean UI and smooth navigation to create a professional online presence.",
     "skills": ["React", "Vite", "CSS Modules", "JavaScript"],
     "source": "https://github.com/komaldethe28/My_Portfolio.git",
-    "demo": "https://komal-dethe.vercel.app/"
+    "demo": "https://komaldetheportfolio.vercel.app/"
   }
 ]
