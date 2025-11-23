@@ -19,7 +19,7 @@ export const Projects = () => {
         <a href="https://github.com/komaldethe28" className={styles.gitproject}
           target="_blank" rel="noopener noreferrer">
           <img src={GitHubLogo} alt="GitHub Logo" className={styles.gitIcon} />
-          View my other Project work
+          View my other Project work & Case-Studies
         </a>
       </div>
 

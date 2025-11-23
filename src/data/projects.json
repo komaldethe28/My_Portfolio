@@ -2,21 +2,30 @@
   {
     "title": "Smart Student Risk Prediction",
     "imageSrc": "projects/image.png",
-    "description": "Designing a predictive model to identify students at risk of dropping out.Addresses real-time engagement issues in virtual education.",
+    "description": "Designed a predictive model using hybrid deep learning techniques to identify students at risk of dropping out. Achieved preliminary accuracy of 89% in detecting risk patterns through behavioral data. Addresses real-time engagement issues in virtual education.",
     "skills": ["Python", "Pandas", "NumPy","Keras", "TensorFlow", "React", "Express", "Node","Chart.js", "MongoDB", "JWT Authentication"],
-    "source": " "
+    "source": "https://github.com/komaldethe28/Student-Risk-Prediction.git"
   },
   {
     "title": "Personal Finance Manager",
     "imageSrc": "projects/Finance.png",
-    "description": "Developed a full-stack finance tracking app with JWT authentication and CRUD operations. Integrated category-wise expense tracking and visual analytics using Chart.js.",
-    "skills": ["React", "Express", "Node", "MongoDB", "JWT Authentication"],
-    "source": " "
+    "description": "Built a secure MERN stack application with JWT authentication and full CRUD operations. Enabled monthly expense tracking by category, improving budget awareness by 40%. Integrated Chart.js for interactive data visualizations.",
+    "skills": ["React", "Express", "Node", "Chart.js", "MongoDB Atlas", "JWT Authentication"],
+    "source": "https://github.com/komaldethe28/finance-manager.git",
+    "demo": "https://finance-manager-sage-one.vercel.app/login"
+  },
+  {
+    "title": "FashionHub E-commerce Website",
+    "imageSrc": "projects/FashionHub.png",
+    "description": "Built a responsive full-stack e-commerce website using the MERN stack with React + Vite for fast rendering and optimized performance. Integrated dynamic cart, wishlist, checkout flow, and order storage using MongoDB. Improved shopping experience with image previews, real-time filters, and category-wise browsing.",
+    "skills": ["React", "Express", "Node", "CI-CD", "MongoDB", "JWT Authentication"],
+    "source": "https://github.com/komaldethe28/FashionHub.git",
+    "demo": "https://fashion-hub-tau.vercel.app/"
   },
   {
     "title": "Research Paper Manager",
     "imageSrc": "projects/Paper_output.png",
-    "description": "Built a web app with login & file upload features for managing faculty research papers. Implemented MongoDB filtering and responsive UI for better usability.",
+    "description": "Developed a web app for managing faculty research data using the MERN stack. Reduced manual tracking time by 70% by automating publication storage and retrieval. Designed an intuitive UI to streamline document workflows.",
     "skills": ["React", "Express", "Node", "MongoDB"],
     "source": "https://github.com/komaldethe28/Reserch-paper.git"
   },
@@ -26,5 +35,13 @@
     "description": "Built predictive models for data analysis and Conducted data cleaning, preprocessing and visualization to enhance insights.",
     "skills": ["Python", "HTML", "CSS", "Flask","pickle", "Numpy","sklearn","streamlit"],
     "source": "https://github.com/komaldethe28/Crop_recommendation_usingML.git"
+  },
+  {
+    "title": "My Portfolio Website",
+    "imageSrc": "projects/kd_icon.png",
+    "description": "A responsive and modern portfolio website built using React and Vite to showcase my skills, projects, education, and achievements. Designed with a clean UI and smooth navigation to create a professional online presence.",
+    "skills": ["React", "Vite", "CSS Modules", "JavaScript"],
+    "source": "https://github.com/komaldethe28/My_Portfolio.git",
+    "demo": "https://komal-dethe.vercel.app/"
   }
 ]
