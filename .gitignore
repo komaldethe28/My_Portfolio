@@ -83,3 +83,4 @@ coverage/
 .vercel
 node_modules
 dist
+.env*.local
