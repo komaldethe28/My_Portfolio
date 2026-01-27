@@ -23,18 +23,12 @@
     "demo": "https://fashion-hub-tau.vercel.app/"
   },
   {
-    "title": "Research Paper Manager",
-    "imageSrc": "projects/Paper_output.png",
-    "description": "Developed a web app for managing faculty research data using the MERN stack. Reduced manual tracking time by 70% by automating publication storage and retrieval. Designed an intuitive UI to streamline document workflows.",
-    "skills": ["React", "Express", "Node", "MongoDB"],
-    "source": "https://github.com/komaldethe28/Reserch-paper.git"
-  },
-  {
-    "title": "Crop Recommendation System",
-    "imageSrc": "projects/Cropimg.png",
-    "description": "Built predictive models for data analysis and Conducted data cleaning, preprocessing and visualization to enhance insights.",
-    "skills": ["Python", "HTML", "CSS", "Flask","pickle", "Numpy","sklearn","streamlit"],
-    "source": "https://github.com/komaldethe28/Crop_recommendation_usingML.git"
+    "title": "Friends – Personalized Web App",
+    "imageSrc": "projects/Friends.jpg",
+    "description": "Built a React-based web app for friends with secure login, memory galleries, messages, and surprises, designed with a warm, responsive UI to create an emotional and interactive experience.",
+    "skills": ["React", "JavaScript", "HTML", "Tailwind CSS","REACT ROUTER DOM","SHADCN/UI & RADIX UI COMPONENTS"],
+    "source": "https://github.com/komaldethe28/Friends.git",
+    "demo": "https://friends-nine-beta.vercel.app/"
   },
   {
     "title": "My Portfolio Website",
@@ -42,6 +36,13 @@
     "description": "A responsive and modern portfolio website built using React and Vite to showcase my skills, projects, education, and achievements. Designed with a clean UI and smooth navigation to create a professional online presence.",
     "skills": ["React", "Vite", "CSS Modules", "JavaScript"],
     "source": "https://github.com/komaldethe28/My_Portfolio.git",
-    "demo": "https://komaldetheportfolio.vercel.app/"
+    "demo": "https://komal-dethe.vercel.app/"
+  },
+  {
+    "title": "Research Paper Manager",
+    "imageSrc": "projects/Paper_output.png",
+    "description": "Developed a web app for managing faculty research data using the MERN stack. Reduced manual tracking time by 70% by automating publication storage and retrieval. Designed an intuitive UI to streamline document workflows.",
+    "skills": ["React", "Express", "Node", "MongoDB"],
+    "source": "https://github.com/komaldethe28/Reserch-paper.git"
   }
 ]
