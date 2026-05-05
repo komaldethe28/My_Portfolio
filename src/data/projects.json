@@ -3,46 +3,92 @@
     "title": "Smart Student Risk Prediction",
     "imageSrc": "projects/image.png",
     "description": "Designed a predictive model using hybrid deep learning techniques to identify students at risk of dropping out. Achieved preliminary accuracy of 89% in detecting risk patterns through behavioral data. Addresses real-time engagement issues in virtual education.",
-    "skills": ["Python", "Pandas", "NumPy","Keras", "TensorFlow", "React", "Express", "Node","Chart.js", "MongoDB", "JWT Authentication"],
+    "skills": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Keras",
+      "TensorFlow",
+      "React",
+      "Express",
+      "Node",
+      "Chart.js",
+      "MongoDB",
+      "JWT Authentication"
+    ],
     "source": "https://github.com/komaldethe28/Student-Risk-Prediction.git"
   },
   {
     "title": "Personal Finance Manager",
     "imageSrc": "projects/Finance.png",
     "description": "Built a secure MERN stack application with JWT authentication and full CRUD operations. Enabled monthly expense tracking by category, improving budget awareness by 40%. Integrated Chart.js for interactive data visualizations.",
-    "skills": ["React", "Express", "Node", "Chart.js", "MongoDB Atlas", "JWT Authentication"],
+    "skills": [
+      "React",
+      "Express",
+      "Node",
+      "Chart.js",
+      "MongoDB Atlas",
+      "JWT Authentication"
+    ],
     "source": "https://github.com/komaldethe28/finance-manager.git",
     "demo": "https://finance-manager-sage-one.vercel.app/login"
   },
   {
     "title": "FashionHub E-commerce Website",
-    "imageSrc": "projects/FashionHub.png",
+    "imageSrc": "projects/ECom.png",
     "description": "Built a responsive full-stack e-commerce website using the MERN stack with React + Vite for fast rendering and optimized performance. Integrated dynamic cart, wishlist, checkout flow, and order storage using MongoDB. Improved shopping experience with image previews, real-time filters, and category-wise browsing.",
-    "skills": ["React", "Express", "Node", "CI-CD", "MongoDB", "JWT Authentication"],
+    "skills": [
+      "React",
+      "Express",
+      "Node",
+      "CI-CD",
+      "MongoDB",
+      "JWT Authentication"
+    ],
     "source": "https://github.com/komaldethe28/FashionHub.git",
     "demo": "https://fashion-hub-tau.vercel.app/"
   },
   {
+    "title": "Real-Time API Traffic Intelligence Engine",
+    "imageSrc": "projects/APITraffic.png",
+    "description": "Real-time API traffic monitoring system built with Node.js and Express, using Redis for caching and rate limiting. Includes anomaly detection, traffic analytics, blocklisting, and a React UI with WebSocket-based live dashboards. Improves API security and performance through automated analysis and alerting.",
+    "skills": [
+      "Node.js",
+      "Express",
+      "Redis",
+      "React",
+      "WebSocket",
+      "MongoDB",
+      "JWT Authentication",
+      "Chart.js"
+    ],
+    "source": "https://github.com/komaldethe28/Real-Time-API-Traffic-Intelligence-Engine.git"
+  },
+  {
     "title": "Friends – Personalized Web App",
-    "imageSrc": "projects/Friends.jpg",
-    "description": "Built a React-based web app for friends with secure login, memory galleries, messages, and surprises, designed with a warm, responsive UI to create an emotional and interactive experience.",
-    "skills": ["React", "JavaScript", "HTML", "Tailwind CSS","REACT ROUTER DOM","SHADCN/UI & RADIX UI COMPONENTS"],
+    "imageSrc": "projects/Friends.png",
+    "description": "Built a React-based web app for friends with secure login, memory galleries, messages, and surprises, designed with a warm, responsive UI to create an emotional and interactive experience. For the demo view of site id = demo_user and password = 1234 feel free to use",
+    "skills": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "Tailwind CSS",
+      "REACT ROUTER DOM",
+      "SHADCN/UI & RADIX UI COMPONENTS"
+    ],
     "source": "https://github.com/komaldethe28/Friends.git",
     "demo": "https://friends-nine-beta.vercel.app/"
   },
   {
-    "title": "My Portfolio Website",
-    "imageSrc": "projects/kd_icon.png",
-    "description": "A responsive and modern portfolio website built using React and Vite to showcase my skills, projects, education, and achievements. Designed with a clean UI and smooth navigation to create a professional online presence.",
-    "skills": ["React", "Vite", "CSS Modules", "JavaScript"],
-    "source": "https://github.com/komaldethe28/My_Portfolio.git",
-    "demo": "https://komal-dethe.vercel.app/"
-  },
-  {
     "title": "Research Paper Manager",
-    "imageSrc": "projects/Paper_output.png",
+    "imageSrc": "projects/Research.jpeg",
     "description": "Developed a web app for managing faculty research data using the MERN stack. Reduced manual tracking time by 70% by automating publication storage and retrieval. Designed an intuitive UI to streamline document workflows.",
-    "skills": ["React", "Express", "Node", "MongoDB"],
+    "skills": [
+      "React",
+      "Express",
+      "Node",
+      "MongoDB"
+    ],
     "source": "https://github.com/komaldethe28/Reserch-paper.git"
   }
 ]
