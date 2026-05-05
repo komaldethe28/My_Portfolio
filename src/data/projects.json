@@ -67,7 +67,7 @@
   {
     "title": "Friends – Personalized Web App",
     "imageSrc": "projects/Friends.png",
-    "description": "Built a React-based web app for friends with secure login, memory galleries, messages, and surprises, designed with a warm, responsive UI to create an emotional and interactive experience. For the demo view of site id = demo_user and password = 1234 feel free to use",
+    "description": "Built React-based web app for friends with secure login, memory galleries, messages, and surprises, designed with warm, responsive UI to create an emotional and interactive experience. For the demo view of site id = demo_user and password = 1234 feel free to use",
     "skills": [
       "React",
       "JavaScript",
