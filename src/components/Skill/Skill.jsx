@@ -38,7 +38,7 @@ export const Skill = () => {
               <h3>Languages:</h3>
               <p>
                 I have a Strong foundation in programming languages with focus on problem-solving and software devlopment across multiple domain.
-                <div className={styles.skillTags}>{["Python", "DSA", "AI-ML", "OOP"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>))}
+                <div className={styles.skillTags}>{["Python", "AI-ML", "OOP"].map((skill, index) => (<span key={index} className={styles.skillTag}>{skill}</span>))}
                 </div>
               </p>
             </div>
